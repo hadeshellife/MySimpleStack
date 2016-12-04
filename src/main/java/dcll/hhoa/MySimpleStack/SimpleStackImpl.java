@@ -8,7 +8,7 @@ import java.util.Stack;
  * Created by Hades on 12/4/16.
  */
 public class SimpleStackImpl implements SimpleStack {
-    Stack<Objects> wrappedStack = new Stack<Object>;
+    Stack<Object> wrappedStack = new Stack<Object>();
 
     public boolean isEmpty(){
         return wrappedStack.isEmpty();
@@ -20,14 +20,14 @@ public class SimpleStackImpl implements SimpleStack {
     }
 
     public void push(Item item){
-        wrappedStack.push(Item);
+        wrappedStack.push(item);
     }
 
-    public void peek() throws EmptyStackException{
-        wrappedStack.peek();
+    public Item peek() throws EmptyStackException{
+        return (Item) wrappedStack.peek();
     }
 
-    public void pop() throws EmptyStackException{
-        wrappedStack.pop();
+    public Item pop() throws EmptyStackException{
+        return (Item) wrappedStack.pop();
     }
 }
