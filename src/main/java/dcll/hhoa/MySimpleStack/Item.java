@@ -14,6 +14,11 @@ public class Item {
         return value;
     }
 
+    /**
+     * Un commentaire repondant a l'exigence #1
+     * @param value
+     */
+
     public void setValue(Object value){
         this.value = value;
     }
